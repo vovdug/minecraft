@@ -1,0 +1,144 @@
+/* root */
+:root{
+    --text: #ffffffff;
+    --black: #000;
+    --icon: rgb(12, 207, 12);
+}
+/* =========header========= */
+body{
+    background-color: var(--black);
+}
+.header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+.header__top {
+    background-color: rgba(12, 12, 12, 0.388);
+    backdrop-filter: blur(5px);
+}
+.list-login-link {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+}
+.list-login-link__item {
+}
+.login-link {
+    font-family: "Pixelify Sans", sans-serif;
+    color: var(--text);
+
+}
+.header__bottom {
+    background-image: url(../img/var2.jpg);
+    background-size: cover;
+
+}
+.menu {
+}
+.menu__list-big {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__item {
+}
+.logo {
+    display: inline-block;
+    max-width: 200px;
+}
+.logo img {
+    height: auto;
+    object-fit: contain;
+}
+.menu__list-small {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+.link-other-page {
+}
+.link-other-page__image {
+    max-width: 100px;
+    vertical-align: middle;
+
+}
+.link-other-page__title {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 22px;
+    color: var(--text);
+    text-shadow: 2px 2px 2px black
+}
+/* main-info */
+.main-info {
+    padding: 181px 0 50px;
+}
+.container {
+}
+.main-info__content {
+    background-image: url(../img/main_info.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.main-info__text {
+    color: var(--text);
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 2px black;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.main-info__title { 
+    display: inline;
+    font-weight: 700;
+    font-size: 30px;
+}
+.main-info__discription {
+    display: inline;
+    font-weight: 600;
+    font-size: 20px;
+}
+/* footer */
+
+.footer {
+}
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.list-social {
+    display: flex;
+    column-gap: 15px;
+}
+.list-social__item {
+}
+.link-social {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.link-social:hover .link-social__icon {
+    fill: var(--icon);
+}
+.link-social__icon {
+    fill: white;
+    transition: 0.5s;
+}
+.w{
+    fill:var(--black);
+}
+.footer__border{
+	height: 10px;
+	border: none;
+	border-top: 1px solid #333;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+
