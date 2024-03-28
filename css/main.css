@@ -109,6 +109,14 @@ body{
     font-weight: 600;
     font-size: 20px;
 }
+/* slider */
+.slider {
+}
+.slider__slide {
+    background-color: chocolate;
+    width: 100px;
+    height: 100px;  
+}
 /* footer */
 
 .footer {
