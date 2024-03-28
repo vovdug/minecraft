@@ -80,13 +80,14 @@ body{
 .container {
 }
 .main-info__content {
-    background-image: url(../img/main_info.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)),url(../img/main_info.jpg);
     height: 60vh;
     background-size: cover;
     background-position: center;
     width: 80%;
     margin: 0 auto;
     position: relative;
+
 }
 .main-info__text {
     color: var(--text);
