@@ -109,6 +109,98 @@ body{
     font-weight: 600;
     font-size: 20px;
 }
+/* slider */
+.slider {
+    width: 65%;
+    /* background-color: chartreuse; */
+    margin: 0 auto;
+    position: relative;
+}
+.slider__slide {
+    background-size: cover;
+    background-position: center;
+    margin:0 10px;  
+    min-height: 450px;
+    position: relative;
+}
+.slider__slide--build {
+    background-image: url(../img/build.jpg);
+}
+.slider__slide--food {
+    background-image: url(../img/food.jpg);
+}
+.slider__slide--fishing {
+    background-image: url(../img/fishing.jpg) ;
+}
+.slider__slide--discover {
+    background-image: url(../img/discover.jpg);
+}
+.slider__slide-enemies {
+    background-image: url(../img/enemies.jpg) ;
+}
+.slider__discription{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 40px;
+    width: 90%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: 3px 3px 3px black;
+}
+.slick-track{
+    display: flex;
+}
+.slick-list{
+    overflow: hidden;
+}
+.slick-arrow{
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.slick-arrow:hover .slick-arrow__icon{
+    fill: var(--icon)
+}
+.slick-arrow__icon{
+    fill: white;
+    transition: 0.2s;
+}
+.slick-prev{
+    left:-40px;
+}
+.slick-next{
+    right: -40px
+}
+.slick-dots button{
+    font-size: 0;
+    line-height: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    transition: 0.2s;
+}
+.slick-dots{
+    display: flex;
+    column-gap: 15px;
+    position: absolute;
+    bottom: -20px;
+    right: 50%;
+    transform: translateX(50%);
+}
+.slick-active button{
+    background-color: var(--icon);
+    transform: scale(1.5);
+}
 /* footer */
 
 .footer {
@@ -147,6 +239,11 @@ body{
 }
 
 /* Адаптив */
+@media(max-width: 1024px){
+.slider__discription{
+    font-size: 30px;
+}
+}
 
 @media(max-width: 768px) {
     .link-other-page{
@@ -165,6 +262,13 @@ body{
     .main-info__text{
         width: 95%;
         text-align: center;
+    }
+    .slider{
+        width: 100%;
+    }
+    .slick-arrow{
+        display: none !important; 
+
     }
 }
 @media(max-width: 550px) {
@@ -198,6 +302,9 @@ body{
         align-items: center;
         row-gap: 20px;
     }
+    .slider__discription{
+        font-size: 25px;
+    }
 }
 @media(max-width: 375px) {
     .menu__list-big .menu__item{
@@ -208,5 +315,8 @@ body{
     }
     .list-login-link{
         justify-content: center;
+    }
+    .slider__discription{
+        font-size: 16px;
     }
 }
