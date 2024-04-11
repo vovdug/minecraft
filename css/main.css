@@ -201,6 +201,37 @@ body{
     background-color: var(--icon);
     transform: scale(1.5);
 }
+/* cards-mod */
+.cards-mod {
+}
+.cards-mod__content {
+}
+.cards-mod__list {
+}
+.cards-mod__item {
+}
+.card-mod {
+}
+.card-mod--candy-craft {
+}
+.card-mod__image {
+}
+.card-mod__link {
+}
+.card-mod__text {
+}
+.card-mod__title {
+}
+.card-mod__discription {
+}
+.card-mod--animania {
+}
+.card-mod--galacti-craft {
+}
+.card-mod--the-aether {
+}
+.card-mod--advanced-rocketry {
+}
 /* footer */
 
 .footer {
