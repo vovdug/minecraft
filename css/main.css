@@ -203,26 +203,64 @@ body{
 }
 /* cards-mod */
 .cards-mod {
+    
 }
 .cards-mod__content {
+    width: 80%;
+    margin: 0 auto;
 }
 .cards-mod__list {
 }
 .cards-mod__item {
 }
 .card-mod {
+    padding: 40px;
+    border: white 1px solid;
+    box-shadow: 0 0 8px white, inset 0 0 8px white;
 }
-.card-mod--candy-craft {
+
+.cards-mod__item:not(:last-child) {
+    margin-bottom: 20px;
 }
+
 .card-mod__image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    margin: 0 auto 40px;
+    width: 80%;
+    position: relative;
 }
 .card-mod__link {
+    background-color: rgba(0, 128, 0, 0.841);
+    padding: 20px 15px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Alumni Sans", sans-serif;
+    color: white;
+    backdrop-filter: blur(5px);
 }
 .card-mod__text {
 }
 .card-mod__title {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 40px;
+    color: var(--text);
+    text-align: center;
+    margin-bottom: 10px;
 }
 .card-mod__discription {
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 28px;
+    color: var(--text);
+}
+.card-mod--candy-craft {
 }
 .card-mod--animania {
 }
@@ -232,6 +270,23 @@ body{
 }
 .card-mod--advanced-rocketry {
 }
+.card-mod--candy-craft .card-mod__image{
+    background-image: url(../img/candycraft_mod.png);
+}
+.card-mod--animania .card-mod__image{
+    background-image: url(../img/Animania.png) ;
+}
+.card-mod--galacti-craft .card-mod__image{
+    background-image: url(../img/galacticraft_planets_mod.jpg);
+}
+.card-mod--the-aether .card-mod__image{
+    background-image: url(../img/aether.jpg) ;
+}
+.card-mod--advanced-rocketry .card-mod__image{
+    background-image: url(../img/Advanced_Rocketry.jpg) ;
+}
+
+
 /* footer */
 
 .footer {
