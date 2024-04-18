@@ -201,6 +201,80 @@ body{
     background-color: var(--icon);
     transform: scale(1.5);
 }
+/* cards-mod */
+.cards-mod {
+    
+}
+.cards-mod__content {
+    width: 80%;
+    margin: 0 auto;
+}
+.cards-mod__list {
+}
+.cards-mod__item {
+}
+.card-mod {
+    padding: 40px;
+    border: white 1px solid;
+    box-shadow: 0 0 8px white, inset 0 0 8px white;
+}
+
+.cards-mod__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.card-mod__image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    margin: 0 auto 40px;
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+}
+.card-mod__link {
+    background-color: rgba(0, 128, 0, 0.841);
+    padding: 20px 15px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Alumni Sans", sans-serif;
+    color: white;
+    backdrop-filter: blur(5px);
+    transition: 0.5s;
+}
+.card-mod__text {
+}
+.card-mod__title {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 40px;
+    color: var(--text);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.card-mod__discription {
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 28px;
+    color: var(--text);
+}
+.card-mod__image .card-mod__picture {
+    transition: 0.5s;
+}
+@media(hover:hover){
+    .card-mod__image:hover .card-mod__picture {
+        transform: scale(1.1);
+    
+    }
+    .card-mod__link:hover {
+        background-color:rgba(15, 182, 15, 0.649);
+        backdrop-filter: blur(3px);
+    }
+}
 /* footer */
 
 .footer {
@@ -268,7 +342,24 @@ body{
     }
     .slick-arrow{
         display: none !important; 
-
+    }
+    .cards-mod__content{
+        width: 100%;
+    }
+    .card-mod__discription{
+        font-size: 22px;
+    }
+    .card-mod__title{
+        font-size: 32px;
+    }
+    .card-mod__image{
+        width: 100%;
+    }
+    .card-mod{
+        padding: 30px 10px;
+    }
+    .card-mod__picture{
+        transform: scale(0.88);
     }
 }
 @media(max-width: 550px) {
@@ -305,6 +396,9 @@ body{
     .slider__discription{
         font-size: 25px;
     }
+    .card-mod__picture{
+        transform: scale(1);
+    }
 }
 @media(max-width: 375px) {
     .menu__list-big .menu__item{
@@ -318,5 +412,8 @@ body{
     }
     .slider__discription{
         font-size: 16px;
+    }
+    .card-mod__link{
+        font-size: 15px;
     }
 }
