@@ -231,6 +231,7 @@ body{
     margin: 0 auto 40px;
     width: 80%;
     position: relative;
+    overflow: hidden;
 }
 .card-mod__link {
     background-color: rgba(0, 128, 0, 0.841);
@@ -245,6 +246,7 @@ body{
     font-family: "Alumni Sans", sans-serif;
     color: white;
     backdrop-filter: blur(5px);
+    transition: 0.5s;
 }
 .card-mod__text {
 }
@@ -260,32 +262,17 @@ body{
     font-size: 28px;
     color: var(--text);
 }
-.card-mod--candy-craft {
+.card-mod__image .card-mod__picture {
+    transition: 0.5s;
 }
-.card-mod--animania {
-}
-.card-mod--galacti-craft {
-}
-.card-mod--the-aether {
-}
-.card-mod--advanced-rocketry {
-}
-.card-mod--candy-craft .card-mod__image{
-    background-image: url(../img/candycraft_mod.png);
-}
-.card-mod--animania .card-mod__image{
-    background-image: url(../img/Animania.png) ;
-}
-.card-mod--galacti-craft .card-mod__image{
-    background-image: url(../img/galacticraft_planets_mod.jpg);
-}
-.card-mod--the-aether .card-mod__image{
-    background-image: url(../img/aether.jpg) ;
-}
-.card-mod--advanced-rocketry .card-mod__image{
-    background-image: url(../img/Advanced_Rocketry.jpg) ;
-}
+.card-mod__image:hover .card-mod__picture {
+    transform: scale(1.1);
 
+}
+.card-mod__link:hover {
+    background-color:rgba(15, 182, 15, 0.649);
+    backdrop-filter: blur(3px);
+}
 
 /* footer */
 
